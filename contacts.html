@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №7 </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+    <header class="hero">
+        <h1>Лабораторна робота №7</h1>
+        <p>
+            Тема: Створення форм в HTML-документі.
+        </p>
+    </header>
+
+    <main>
+        <section class="card intro-card">
+            <h2>Зв’яжіться з нами</h2>
+            <p class="section-description">
+                Заповніть форму нижче, щоб надіслати звернення. Усі обов’язкові поля мають бути
+                заповнені перед відправкою форми.
+            </p>
+        </section>
+
+        <section class="card form-card">
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="username">Ваше ім’я</label>
+                        <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Введіть ваше ім’я"
+                                autocomplete="name"
+                                required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="useremail">Ваш Email</label>
+                        <input
+                                type="email"
+                                id="useremail"
+                                name="useremail"
+                                placeholder="example@mail.com"
+                                autocomplete="email"
+                                required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="userpass">Пароль для реєстрації</label>
+                    <input
+                            type="password"
+                            id="userpass"
+                            name="password"
+                            placeholder="Введіть пароль"
+                            autocomplete="new-password"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Тема звернення</label>
+                    <select id="topic" name="topic" required>
+                        <option value="">Оберіть тему</option>
+                        <option value="support">Техпідтримка</option>
+                        <option value="sales">Відділ продажів</option>
+                        <option value="other">Інше</option>
+                    </select>
+                </div>
+
+                <fieldset class="form-group radio-group">
+                    <legend>Ваша стать</legend>
+                    <div class="options-row">
+                        <label class="option-item" for="male">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <span>Чоловік</span>
+                        </label>
+
+                        <label class="option-item" for="female">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <span>Жінка</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="message">Повідомлення</label>
+                    <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Напишіть ваше повідомлення"
+                            required
+                    ></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label" for="agree">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <span>Я даю згоду на обробку персональних даних</span>
+                    </label>
+                </div>
+
+                <div class="button-row">
+                    <button type="submit" class="btn btn-primary">Надіслати</button>
+                    <button type="reset" class="btn btn-secondary">Очистити</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</div>
+</body>
+</html>
