@@ -2,7 +2,7 @@
   <img src="Mai-Transparent-PNG.png" alt="Mai"/>
 </p>
 
-<h1 align="center">Створення таблиць в HTML-документі.</h1>
+<h1 align="center">Створення форм в HTML-документі.</h1>
 
 ---
 
